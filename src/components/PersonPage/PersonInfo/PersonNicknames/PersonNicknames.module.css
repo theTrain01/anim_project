@@ -1,0 +1,13 @@
+.nick__list {
+    min-width: 300px;
+    min-height: 300px;
+    
+}
+
+.nick {
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    margin-top: var(--spacing-small);
+}

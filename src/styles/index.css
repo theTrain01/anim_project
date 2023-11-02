@@ -1,0 +1,72 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-violet: #880c73;
+
+  --spacing-medium: 40px;
+  --spacing-small: 20px;
+  --spacing-large: 60px;
+
+  --border-medium: 8px;
+
+  --font-default: sans-serif;
+  --font-size-medium: 20px;
+  --font-size-large: 38px;
+  --font-size-small: 18px;
+
+  --width-all-pages: 1400px;
+
+  --theme-default-bg: #fff;
+  --theme-blue-bg: 
+    linear-gradient(
+      to bottom, #208cde, 
+      #009ade, #00a7d9, 
+      #00b2cf, #01bbc4);
+  --theme-red-bg: 
+    linear-gradient(
+      to bottom, #720505, 
+      #880810, #9e0b1a,
+      #b50d25, #cd0f30);
+
+  --color-default-header: var(var(--color-black));
+  --color-blue-header: var(--color-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+
+  font-family: var(--font-default);
+}
+
+body {
+  max-width: var(--width-all-pages);
+  height: 110vh;
+  margin: 0 auto;
+  background: var(--theme-blue-bg);
+  overflow-x: hidden;
+}
+
+.header_text {
+  font-size: var(--font-size-large);
+  color: var(--color-black);
+  margin-top: var(--spacing-medium);
+
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: none;
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}

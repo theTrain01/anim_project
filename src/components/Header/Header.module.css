@@ -1,0 +1,17 @@
+.container {
+    padding-top: var(--spacing-medium);
+}
+
+.list__container {
+    display: flex;
+}
+
+.list__container a {
+    font-size: var(--font-size-medium);
+    margin-right: var(--spacing-medium);
+    color: var(--color-black);
+}
+
+.list__container :global(a.active) {
+    color: var(--color-violet);
+}
