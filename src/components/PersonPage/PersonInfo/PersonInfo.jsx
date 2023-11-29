@@ -8,6 +8,7 @@ import { getApiResourse } from '@utils/network'
 
 import PersonNicknames from './PersonNicknames/PersonNicknames'
 import PersonLinkBack from '../PersonLinkBack/PersonLinkBack'
+import TextAnimation from './TextAnimation'
 
 import styles from './PersonInfo.module.css'
 
@@ -67,7 +68,7 @@ const PersonInfo = () => {
                                     />
                                 </div>
 
-                                {about ? <p>{about}</p> : <h2>Not information</h2>}
+                                {about ? <div className={styles.text}><TextAnimation about = {about}/></div> : <h2>Not information</h2>}
                                 
                                 {nicknames.length ? (
                                     <div className={styles.block__nicknames}>
@@ -86,3 +87,5 @@ const PersonInfo = () => {
 }
 
 export default PersonInfo
+
+// {about ? <p>{about}</p> : <h2>Not information</h2>}

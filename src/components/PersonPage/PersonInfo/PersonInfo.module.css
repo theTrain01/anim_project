@@ -16,5 +16,11 @@
 }
 
 .block__nicknames {
+    width: 300px;
     margin-left: var(--spacing-large);
 }
+
+.text {
+    width: 300px;
+}
+

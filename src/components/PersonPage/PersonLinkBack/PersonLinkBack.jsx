@@ -1,4 +1,7 @@
 import { useNavigate } from 'react-router-dom'
+import cn from 'classnames'
+import { useTheme } from '@context/ThemeProvider';
+
 import backArrow from './img/back.png'
 import styles from './PersonLinkBack.module.css'
 
@@ -17,7 +20,7 @@ const PersonLinkBack = () => {
                 >
                     <div className={styles.box}>
                         <img src={backArrow} alt="back" />
-                        <p>Сome back</p>
+                        <p className={styles.dark}>Сome back</p>
                     </div>
                 </a>
             </div>

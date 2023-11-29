@@ -1,4 +1,7 @@
 import { NavLink } from 'react-router-dom';
+
+import Theme from '@components/Theme';
+
 import styles from './Header.module.css'
 
 const Header = () => {
@@ -13,7 +16,15 @@ const Header = () => {
                     <li>
                         <NavLink to='/people'>Person</NavLink>
                     </li>
+
+                    <li>
+                        <NavLink to='/episodes'>About episodes</NavLink>
+                    </li>
                 </ul>
+
+                <div className={styles.theme__box}>
+                    <Theme />
+                </div>
             </div>
         </>
     )

@@ -59,8 +59,8 @@ const PersonPage = () => {
                 : (
                     <>
                         <Pagination 
-                            totalPerson = {person.length} 
-                            personPerPage = {personPerPage}
+                            total = {person.length} 
+                            PerPage = {personPerPage}
                             paginate = {paginate}
                         />
                         <PeoplePage 

@@ -1,0 +1,38 @@
+.box__item {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.episode__number {
+    margin-bottom: 10px;
+}
+
+.description {
+    width: 350px;
+    margin-left: 30px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+}
+
+.date {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.rate__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate__button {
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    cursor: pointer;
+}

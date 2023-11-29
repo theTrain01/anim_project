@@ -1,9 +1,9 @@
 import styles from './Pagination.module.css'
 
-const Pagination = ({personPerPage, totalPerson, paginate}) => {
+const Pagination = ({PerPage, total, paginate}) => {
     const pageNumber = []
 
-    for (let i = 1; i <= Math.ceil(totalPerson / personPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(total / PerPage); i++) {
         pageNumber.push(i)
     }
 

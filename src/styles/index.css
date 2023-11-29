@@ -11,18 +11,18 @@
 
   --font-default: sans-serif;
   --font-size-medium: 20px;
-  --font-size-large: 38px;
+  --font-size-large: 34px;
   --font-size-small: 18px;
 
   --width-all-pages: 1400px;
 
   --theme-default-bg: #fff;
-  --theme-blue-bg: 
+  --theme-light-bg: 
     linear-gradient(
       to bottom, #208cde, 
       #009ade, #00a7d9, 
       #00b2cf, #01bbc4);
-  --theme-red-bg: 
+  --theme-dark-bg: 
     linear-gradient(
       to bottom, #720505, 
       #880810, #9e0b1a,
